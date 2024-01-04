@@ -37,7 +37,6 @@ export class DisasterService {
   }
 
   async findOne(id: string) {
-    console.log('ID =>>', id);
     return (await this.getAll()).filter((x) => x.obstacleId == +id);
   }
 
